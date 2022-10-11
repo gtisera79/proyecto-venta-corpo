@@ -80,10 +80,10 @@ header{
     list-style: none;
     display: flex;
     justify-content: end;
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 5px;
     padding-left: 5px;
-    gap: 15px;
+    gap: 5px;
         
 }
 
@@ -129,7 +129,7 @@ header{
 
 .navBar li:hover{
     /*transform: skew(30deg);*/
-    transform: scale(1.2);
+    transform: scale(0.8);
     /*transform: translateY(-15px);*/
 }
 /*aside*/
@@ -283,7 +283,7 @@ footer{
     padding: 10px;
     grid-template-columns: 85% 15%;
     width: auto;
-    height: 12vh;
+    height: auto;
     }
 .telefonoCorreoDireccion{
     color: white;
@@ -463,7 +463,7 @@ footer{
 
 .contenedor{
     display: grid;
-    width: 576px;
+    width: auto;
     height: auto;
     grid-template-columns: 1fr;
     grid-row: repeat(6, 1fr);
