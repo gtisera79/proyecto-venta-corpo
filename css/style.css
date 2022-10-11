@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS rules to specify families
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+header{
+    background-color: black;
+}
+
+.banner{
+    background-image: url("../img/banner-principal.jpg");
+    width: 100%;
+    height: 623px;   
+    text-align: center;
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    */
+
+}
+.nombreEmpresa{
+    color: rgb(94, 160, 203);
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;  
+    padding: 5px;     
+}
+
+/*animacion nombre de la empresa*/
+.nombreEmpresa{
+    
+        -webkit-animation: nombreEmpresa 2.5s ease-out both;
+                animation: nombreEmpresa 2.5s ease-out both;
+    }
+
+@-webkit-keyframes nombreEmpresa {
+    0% {
+      -webkit-transform: rotate(-180deg) scale(0);
+              transform: rotate(-180deg) scale(0);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+  }
+  @keyframes nombreEmpresa {
+    0% {
+      -webkit-transform: rotate(-180deg) scale(0);
+              transform: rotate(-180deg) scale(0);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity:180
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+  }
+  
+/*Barra de navegacion*/
+.navBar{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    font-size: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    gap: 15px;
+        
+}
+
+/*animacion barra de navegacion*/
+.navBar {
+	-webkit-animation: navBar 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: navBar 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes navBar {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes navBar {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+/*Barra de navegacion color de la fuente*/
+.navBar li a{
+    text-decoration: none;
+    color: rgb(94, 160, 203);
+    
+    
+}
+
+.navBar li:hover{
+    /*transform: skew(30deg);*/
+    transform: scale(1.2);
+    /*transform: translateY(-15px);*/
+}
+/*aside*/
+.dolarCotizacion{
+    background-color: rgba(65, 73, 65, 0.5);    
+}
+.dolarLink{
+    text-align: center;
+}
+.dolarLink:hover{
+    transform: scale(0.8);
+}
+.dolarLink a{
+    text-decoration: none;
+    color: black;
+}
+.dolarIcono:hover{
+    transform: scale(0.7);
+}
+.dolarIcono{
+    display: flex;
+    justify-content: center;
+        
+}
+/*fondos de paginas*/
+.fondoDell{
+    background-color: rgb(94, 160, 203, 0.50);
+}
+.fondoHpe{
+    background-color: rgb(4, 172, 124, 0.50);
+}
+.fondoLenovo{
+    background-color: rgb(154, 16, 37, 0.50);
+}
+
+h1{
+    text-align: center;
+    padding: 2px;
+}
+/*rotate
+.logo {
+	-webkit-animation: logo 0.6s ease-in-out both;
+	        animation: logo 0.6s ease-in-out both;
+}
+
+ @-webkit-keyframes logo {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes logo {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  */
+
+/*boton comprar*/
+button{
+    width: 120px;
+    height: 30px;
+    border-radius: 10%;
+    font-style: italic;
+    color: red;
+}
+.telefonoCorreoDireccion{
+    color: white;
+    
+}
+.telefonoCorreoDireccion li a{
+    text-decoration: none;
+    color: rgb(94, 160, 203);
+}
+/*fonts de titulos y textos
+
+.Card p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+}
+*/
+
+/*Preguntas Frecuentes faq.html*/
+.preguntas li{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px;
+}
+.preguntas{
+    width: auto;
+    height: auto;
+
+}
+/*animacion Faq*/
+.preguntas {
+	-webkit-animation: preguntas 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: preguntas 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes preguntas {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes preguntas {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+footer{
+    display: grid;
+    background-color: black;
+    padding: 10px;
+    grid-template-columns: 85% 15%;
+    width: auto;
+    height: 12vh;
+    }
+.telefonoCorreoDireccion{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-right: 50px;
+    
+}
+.redesSociales{
+  color: rgb(94, 160, 203);
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+.iconosRedes{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.quienes{
+    font-size: 25px;
+    margin: 10px;
+}
+/*animacion quienes*/
+.quienes {
+	-webkit-animation: quienes 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: quienes 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes quienes {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes quienes {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+/*altura formulario de contacto*/
+.superficieMain{
+    width: auto;
+    height: 100vh;
+}
+.formularioContacto{
+    display: grid;
+    justify-content: center;
+    padding: 2px 100px;
+}
+.formularioContacto span{
+    font-size: 20px;
+}
+.textoContacto{
+    width: 200px;
+    height: 20px;
+}
+.textoEscribenos{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    font-size: 25px;
+}
+.botonContacto{
+    width: 60px;
+    height: 20px;
+}
+.formularioContacto input::placeholder{
+    color: blue;
+    
+}
+
+.formularioContacto h2:hover{
+    color: blue;
+    transform: scale(1.3);
+}
+.botonContacto:hover{
+    color: red;
+}
+
+/*posicionar las card*/
+
+.contenedor .box{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+/*efecto moviemiento card*/
+.contenedor .box:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.contenedor .box img{
+    width: 330px;
+    height: 220px;
+}
+/*titulo card*/
+.contenedor .box h2{
+    font-weight: 600;
+}
+/*descripcion*/
+
+.contenedor .box p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 8px;
+    padding: 2px;
+    margin: 10px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/*elementos main*/
+.box{
+    justify-content: center;
+    align-items: center;
+}
+.box-1{
+    background-color: none;
+    grid-area: box-1;
+}
+.box-2{
+    background-color: none;
+    grid-area: box-2;
+}
+.box-3{
+    background-color: none;
+    grid-area: box-3;
+}
+.box-4{
+    background-color: none;
+    grid-area: box-4;
+}
+.box-5{
+    background-color: none;
+    grid-area: box-5;
+}
+.box-6{
+    background-color: none;
+    grid-area: box-6;
+}
+
+/*grids media queri*/
+
+
+.contenedor{
+    display: grid;
+    width: 576px;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-row: repeat(6, 1fr);
+    grid-template-areas:
+    "box-1"
+    "box-2"
+    "box-3"
+    "box-4"
+    "box-5"
+    "box-6"
+    ;    
+    justify-items: center;
+    margin: auto;
+    
+    
+}
+
+@media (min-width: 768px){
+    .contenedor{
+        width: 768px;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: repeat (3, 1fr);
+        grid-template-areas:
+        "box-1 box-2"
+        "box-3 box-4"
+        "box-5 box-6"
+        ;
+        justify-items: center;
+    }
+}
+
+
+@media (min-width: 992px){
+    .contenedor{
+        width: auto;
+        height: auto;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: repeat (2, 1fr);
+        grid-template-areas:
+        "box-1 box-2 box-3"
+        "box-4 box-5 box-6"
+        ;
+        justify-items: center;
+    }
+}
+/*grids*/
