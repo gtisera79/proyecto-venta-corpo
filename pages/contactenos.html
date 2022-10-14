@@ -14,31 +14,89 @@
             <a href="../index.html"><img src="../img/Logo.png" alt=""></a>
             <h1 class="nombreEmpresa">Sistemas del Sur Rosario</h1>
         </div>
+        <nav>
             <ul class="navBar">
-                <li><a href="../pages/quienes.html">Quienes somos</a></li>
+                <li><a href="../pages/quienes.html">Corpo</a></li>
                 <li><a href="../pages/dellemc.html">Dell</a></li>
                 <li><a href="../pages/hpe.html">Hpe</a></li>
                 <li><a href="../pages/lenovo.html">Lenovo</a></li>
-                <li><a href="../pages/contactenos.html">Escribanos</a></li>
+                <li><a href="../pages/contactenos.html">Correo</a></li>
                 <li><a href="../pages/faq.html">Faq</a></li>
             </ul>
         </nav>
     </header>
-    <main class="superficieMain">
-        
-        <form class="formularioContacto"  action="Post" enctype=""> <!--no encuentra la pagina por el post-->  
-            <h2>Nuestra direccion de correo es gtisera79@gmail.com</h2>        
-            <span>Nombre:</span>
-            <input type="text" name="" id="Nombre" placeholder="Nombre" class="textoContacto">
-            <span>Correo Electronico:</span>
-            <input type="email" name="" id="Correo Electronico" placeholder="Correo Electronico" class="textoContacto">
-            <span>Escribenos:</span>
-            <input type="text" name="" id="Escribenos" placeholder="Que tienes para decirnos?" class="textoEscribenos">
-            <span>Borrar datos:</span>
-            <input type="reset" value="Limpiar" class="botonContacto">
-            <span>Enviar</span>
-            <input type="submit" value="Enviar" class="botonContacto">
-        </form>    
+    <main class="container-fluid superficieMain">
+        <!--
+        <div>
+            <form class="formularioContacto"  action="Post" enctype=""> no encuentra la pagina por el post  
+                <h2>Nuestra direccion de correo es gtisera79@gmail.com</h2>        
+                <span>Nombre:</span>
+                <input type="text" name="" id="Nombre" placeholder="Nombre" class="textoContacto">
+                <span>Correo Electronico:</span>
+                <input type="email" name="" id="Correo Electronico" placeholder="Correo Electronico" class="textoContacto">
+                <span>Escribenos:</span>
+                <input type="text" name="" id="Escribenos" placeholder="Escribenos" class="textoEscribenos">
+                <span>Borrar datos:</span>
+                <input type="reset" value="Limpiar" class="botonContacto">
+                <span>Enviar</span>
+                <input type="submit" value="Enviar" class="botonContacto">
+            </form>    
+        </div>
+            -->
+            <div class="container formularioContacto">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset class="margenFromulario">
+                                    <legend class="text-center header">Escribenos</legend>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="email" name="email" type="text" placeholder="Correo Electronico" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Deje su masaje. Nos pondremos en contacto con usted dentro de 2 días hábiles." rows="10"></textarea>
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
     </main>
     <footer>
         <section>
