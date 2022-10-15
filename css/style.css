@@ -171,6 +171,7 @@ h1{
 }
 
 /*boton comprar*/
+/*
 button{
     width: 60px;
     height: 30px;
@@ -179,6 +180,7 @@ button{
     color: red;
     margin-left: 20px;
 }
+*/
 .telefonoCorreoDireccion{
     color: white;
     
@@ -338,6 +340,7 @@ fieldset{
   padding: 2px 2px;
   
 }
+/*formulario de contacto*/
 .header {
   color: rgb(94, 160, 203);
   font-size: 27px;
