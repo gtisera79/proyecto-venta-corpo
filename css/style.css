@@ -32,9 +32,13 @@ header{
     font-size: 30px;
     font-family: 'Josefin Sans', sans-serif;
     text-align: left;  
-    padding: 5px;     
+    padding: 5px;   
 }
 
+.nombreEmpresa a{
+    text-decoration: none;
+    color: rgb(94, 160, 203);
+}
 /*animacion nombre de la empresa*/
 .nombreEmpresa{
     
@@ -93,7 +97,7 @@ header{
 	        animation: navBar 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
- @-webkit-keyframes navBar {
+@-webkit-keyframes navBar {
     0% {
       letter-spacing: -0.5em;
       opacity: 0;
@@ -122,11 +126,8 @@ header{
 /*Barra de navegacion color de la fuente*/
 .navBar li a{
     text-decoration: none;
-    color: rgb(94, 160, 203);
-    
-    
+    color: rgb(94, 160, 203);  
 }
-
 .navBar li:hover{
     /*transform: skew(30deg);*/
     transform: scale(0.8);
@@ -169,18 +170,6 @@ h1{
     text-align: center;
     padding: 2px;
 }
-
-/*boton comprar*/
-/*
-button{
-    width: 60px;
-    height: 30px;
-    border-radius: 20%;
-    font-style: italic;
-    color: red;
-    margin-left: 20px;
-}
-*/
 .telefonoCorreoDireccion{
     color: white;
     
@@ -188,35 +177,22 @@ button{
 .telefonoCorreoDireccion li a{
     text-decoration: none;
     color: rgb(94, 160, 203);
+    
 }
-/*fonts de titulos y textos
-
-.Card p{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
-}
-*/
-
 /*Preguntas Frecuentes faq.html*/
 .preguntas p{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
-    padding: 10px;
-    margin: 5px;
     border: 1px;
     width: auto;
     height: 100vh;
 }
-
-
-
 /*animacion Faq*/
 .preguntas {
 	-webkit-animation: preguntas 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: preguntas 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: preguntas 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
- @-webkit-keyframes preguntas {
+@-webkit-keyframes preguntas {
     0% {
       letter-spacing: 1em;
       -webkit-transform: translateZ(300px);
@@ -250,8 +226,6 @@ button{
       opacity: 1;
     }
   }
-  
-
 footer{
     display: grid;
     background-color: black;
@@ -266,7 +240,8 @@ footer{
     justify-content: center;
     gap: 18px;
     margin-right: 50px;
-    
+    text-decoration: none;
+    list-style: none;    
 }
 .redesSociales{
   color: rgb(94, 160, 203);
@@ -279,22 +254,18 @@ footer{
     justify-content: right;
     gap: 10px;
     margin-right: 10px;
+    text-decoration: none;
+    list-style: none;
 }
-.faq p{
-  font-size: 25px;
-  margin: 10px;
-}
-.quienes{
-    font-size: 25px;
-    margin: 10px;
-}
+
+
 /*animacion quienes*/
 .quienes {
 	-webkit-animation: quienes 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: quienes 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
- @-webkit-keyframes quienes {
+@-webkit-keyframes quienes {
     0% {
       -webkit-filter: blur(12px);
               filter: blur(12px);
@@ -325,15 +296,12 @@ footer{
 }
 
 /*formulario de contacto*/
-
 fieldset{
   background-color: rgba(238, 230, 230, 0.459);
 }
-
 .form-group{
   margin: 10px;
 }
-
 .formularioContacto{
   justify-content: center;
   align-items: center;
@@ -351,12 +319,10 @@ fieldset{
   font-size: 35px;
   color: rgb(94, 160, 203);
 }
-
 /*posicionar las card*/
-
 .contenedor .box{
-    width: 330px;
-    height: 430px;
+    width: 220px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -364,14 +330,13 @@ fieldset{
     text-align: center;
     transition: all 0.25s;
 }
-
 /*efecto moviemiento card*/
 .contenedor .box:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 .contenedor .box img{
-    width: 330px;
+    width: 220px;
     height: 220px;
 }
 /*titulo card*/
@@ -380,9 +345,10 @@ fieldset{
 }
 /*descripcion*/
 
+
 .contenedor .box p{
     padding: 0 1rem;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 300;
     background-color: rgba(255, 255, 255, 0.233);
     border-radius: 8px;
@@ -399,7 +365,6 @@ fieldset{
     justify-content: center;
     margin: auto;
 }
-
 /*elementos main*/
 .box{
     justify-content: center;
@@ -430,11 +395,10 @@ fieldset{
     grid-area: box-6;
 }
 
-
 /*grids media queri*/
 
-/*
-@media (min-width: 576px){*/
+
+@media (min-width: 576px){
 .contenedor{
     display: grid;
     width: auto;
@@ -452,9 +416,23 @@ fieldset{
     justify-items: center;
     margin: auto;
     
-  
 }
-
+  .quienes p{
+    font-size: 25px;
+    margin: 5px;
+  }
+  .preguntas p{
+    font-size: 25px;
+    margin: 5px;
+  }
+  .contenedor .box p{
+    font-size: 15px;
+}
+.contenedor .box{
+  width: 330px;
+  height: 430px;
+}
+}
 
 
 @media (min-width: 768px){
@@ -470,20 +448,38 @@ fieldset{
         ;
         justify-items: center;
     }
+    .quienes p{
+      font-size: 30px;
+      margin: 10px;
+    }
+    .preguntas p{
+      font-size: 30px;
+      margin: 10px;
 }
-
+.navBar{  
+  font-size: 25px;  
+  gap: 20px;
+}
+}
 
 @media (min-width: 992px){
-    .contenedor{
-        width: auto;
-        height: auto;
-        grid-template-columns: repeat (3, 1fr);
-        grid-template-rows: repeat (2, 1fr);
-        grid-template-areas:
-        "box-1 box-2 box-3"
-        "box-4 box-5 box-6"
-        ;
-        justify-items: center;
+  .contenedor{
+      width: auto;
+      height: auto;
+      grid-template-columns: repeat (3, 1fr);
+      grid-template-rows: repeat (2, 1fr);
+      grid-template-areas:
+      "box-1 box-2 box-3"
+      "box-4 box-5 box-6"
+      ;
+      justify-items: center;
+  }
+    .quienes p{
+    font-size: 35px;
+    margin: 10px;
     }
+  .preguntas p{
+    font-size: 35px;
+    margin: 10px;
+  }
 }
-/*grids*/
