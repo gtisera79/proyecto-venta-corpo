@@ -169,34 +169,6 @@ h1{
     text-align: center;
     padding: 2px;
 }
-/*rotate
-.logo {
-	-webkit-animation: logo 0.6s ease-in-out both;
-	        animation: logo 0.6s ease-in-out both;
-}
-
- @-webkit-keyframes logo {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
-  }
-  @keyframes logo {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
-  }
-  
-  */
 
 /*boton comprar*/
 button{
@@ -350,51 +322,14 @@ footer{
     height: 100vh;
 }
 
-/* formulario de contacto
-
-
-.formularioContacto{
-    justify-content: center;
-    align-items: center;
-    padding: 2px 100px;
-}
-.formularioContacto span{
-    font-size: 20px;
-}
-.textoContacto{
-    width: 200px;
-    height: 20px;
-}
-.textoEscribenos{
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    font-size: 25px;
-}
-.botonContacto{
-    width: 60px;
-    height: 20px;
-}
-.formularioContacto input::placeholder{
-    color: blue;
-    
-}
-
-.formularioContacto h2:hover{
-    color: blue;
-    transform: scale(0.8);
-}
-.botonContacto:hover{
-    color: red;
-}
-formulario de contacto*/
+/*formulario de contacto*/
 
 fieldset{
   background-color: rgba(238, 230, 230, 0.459);
 }
 
 .form-group{
-  margin: 20px;
+  margin: 10px;
 }
 
 .formularioContacto{
@@ -491,6 +426,7 @@ fieldset{
     background-color: none;
     grid-area: box-6;
 }
+
 
 /*grids media queri*/
 
